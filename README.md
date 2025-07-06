@@ -9,6 +9,7 @@ In this repository you will find the main documentation associated with the MOSb
 
 ## Assignments
 - [MOSbius Week 3 Assignment](assignments/MOSbius_week3_assignment.md)
+- [MOSbius Week 4 Assignment](assignments/MOSbius_week4_assignment.md)
 
 ## Documentation Resources
 
