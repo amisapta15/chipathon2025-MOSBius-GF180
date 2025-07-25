@@ -53,7 +53,7 @@ This test bench runs transient simulations of the same inverter and uses the XSc
    <img src="./img/xschem_visualizer.png" width="600" />
 </p> 
 
-Once you have set up the testbench correctly, click on the **Simulation** menu, then click on **Graphs** and select *Add waveform* and *Add waveform reload launcher* to include the two modules, as illustrated below.
+Once you have set up the testbench correctly, click on the **Simulation** menu, then click on **Graphs** and select *Add waveform graph* and *Add waveform reload launcher* to include the two modules, as illustrated below.
 
 <p align="center">
    <img src="./img/xschem_modules.png" width="600" />
