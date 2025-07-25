@@ -4,8 +4,10 @@ In this repository you will find the main documentation associated with the MOSb
 
 ## Slides 
 
-- [Overview of the MOSbius Track & How to Get Started (week 2)](./files/MOSbius_Chipathon_2025_kinget_v1.pdf) 
-- [Tutorial on MOSbius & How to Make a Chip Proposal (week 3)](./files/MOSbius_Chipathon_2025_tutorial_kinget_v1.pdf)
+- [Overview of the MOSbius Track & How to Get Started [Peter Kinget] (week 2)](./files/MOSbius_Chipathon_2025_kinget_v1.pdf) 
+- [Tutorial on MOSbius & How to Make a Chip Proposal [Peter Kinget] (week 3)](./files/MOSbius_Chipathon_2025_tutorial_kinget_v1.pdf)
+- [Systematic Design of Analog CMOS Circuits [B. Murmann] (week 4)](https://github.com/bmurmann/Chipathon2025?tab=readme-ov-file)
+- [Design Databases and Much More [Peter Kinget] (week 5)](./files/MOSbius_Chipathon_designDatabaseAndMore_2025_kinget_v1.pdf)
 
 ## Assignments
 - [MOSbius Week 3 Assignment](assignments/MOSbius_week3_assignment.md)
