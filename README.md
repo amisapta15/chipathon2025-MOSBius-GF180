@@ -24,6 +24,8 @@ In this repository you will find the main documentation associated with the MOSb
     - [`CAD_tool_flow`](./CAD_tool_flow/README.md) explains the various CAD tools, their input and output files, and how they interact.
     - [`CAD_tool_installation`](./CAD_tool_installation/README.md) has installation instructions for the open-source IC CAD tools.
 
+- [Chipathon Top-Level Integration Info](https://github.com/sscs-ose/sscs-chipathon-2025/tree/main/resources/Integration)
+
 ## Creating Your GitHub Repository for Your Design Files
 
 - To create the GitHub repository for your design files so you can collaborate among your team, use [GF180 Analog Design Project Template Repo](https://github.com/Jianxun/iic-osic-tools-project-template) as a template for creating your project file repository on GitHub (see also in [CAD_tool_installation](./CAD_tool_installation/install_using_repo.md))
