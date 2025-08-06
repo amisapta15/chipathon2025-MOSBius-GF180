@@ -32,6 +32,7 @@ From [Definition of the Process Variant](https://github.com/RTimothyEdwards/open
 ### Layout
 - Use a DBU (database unit) of 1nm or 0.001um (default in klayout)
 - Draw everything on a 5nm or 0.005um grid otherwise you might get off-grid errors. See [design rules](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_07_02.html). 
+- Use this layer definition file for a different coloring scheme that aligns better with the *'Mead & Conway' style*: [gf180mcu_PK.lyp](gf180mcu_PK.lyp)
 
 ## Design Examples
 
