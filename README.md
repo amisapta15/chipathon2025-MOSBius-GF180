@@ -21,6 +21,7 @@ In this repository you will find the main documentation associated with the MOSb
 
     - [`gf180mcuD_technology_info`](./gf180mcuD_technology_info/README.md) has information  about the GF180 technology gf180mcuD and links to design examples.
     - [`Design FAQ`](./design_FAQ/README.md): Frequently asked design questions.
+    - [`GF 180 Examples`](./gf180_examples/) has step-by-step instructions for an inverter and ring oscillator design, from schematic to layout. 
     - [`CAD_tool_computing_constellation`](./CAD_tool_computing_constellation/README.md) gives an overview how the tools are being run on your computer.
     - [`CAD_tool_flow`](./CAD_tool_flow/README.md) explains the various CAD tools, their input and output files, and how they interact.
     - [`CAD_tool_installation`](./CAD_tool_installation/README.md) has installation instructions for the open-source IC CAD tools.
@@ -36,4 +37,4 @@ In this repository you will find the main documentation associated with the MOSb
 
 ## Any Questions, Corrections, ... 
 
-Please file a github issue for this repository. 
+Please [file an issue](https://github.com/mosbiuschip/chipathon2025/issues/new) for this repository. 
