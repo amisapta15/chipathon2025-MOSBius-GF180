@@ -33,3 +33,7 @@ In this repository you will find the main documentation associated with the MOSb
 
 - The template has a suggested folder structure, as well as an example of a small design of a five-transistor operational transconductance amplifier (5T-OTA) including schematics and layout. 
 - This template is part of the [installation instructions (simplest version)](./CAD_tool_installation/install_using_repo.md).
+
+## Any Questions, Corrections, ... 
+
+Please file a github issue for this repository. 
