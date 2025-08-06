@@ -20,6 +20,7 @@ In this repository you will find the main documentation associated with the MOSb
 - [MOSbius Chipathon 2025 Documentation (this repo)](https://github.com/mosbiuschip/chipathon2025) has documentation, installation instructions, and technology information. 
 
     - [`gf180mcuD_technology_info`](./gf180mcuD_technology_info/README.md) has information  about the GF180 technology gf180mcuD and links to design examples.
+    - [`Design FAQ`](./design_FAQ/README.md): Frequently asked design questions.
     - [`CAD_tool_computing_constellation`](./CAD_tool_computing_constellation/README.md) gives an overview how the tools are being run on your computer.
     - [`CAD_tool_flow`](./CAD_tool_flow/README.md) explains the various CAD tools, their input and output files, and how they interact.
     - [`CAD_tool_installation`](./CAD_tool_installation/README.md) has installation instructions for the open-source IC CAD tools.
