@@ -4,7 +4,9 @@
 - [Open PDK Documentation](https://gf180mcu-pdk.readthedocs.io/en/latest/index.html)
 - [Definition of the Process Variant](https://github.com/RTimothyEdwards/open_pdks/blob/master/gf180mcu/Makefile.in)
 
-## Process Variant
+## Process Info
+
+### Process Variant
 From [Definition of the Process Variant](https://github.com/RTimothyEdwards/open_pdks/blob/master/gf180mcu/Makefile.in): 
 > GF180MCU uses the same base process as
 > other GF180 processes.  However, instead of a thin oxide gate, the base
@@ -15,14 +17,21 @@ From [Definition of the Process Variant](https://github.com/RTimothyEdwards/open
 
 > gf180mcuD   =  METALS5 | MIM | THICKMET1P1 | HRPOLY1K
 
-- [Overview of MOS Devices](./devices.md)
+### Metal Stack
 - [Metal Layer Stack](metal_stack.md) 
    - Five layers of metal
    - Top metal (5) is 1.1 $\mu m$ thick
+
+### Devices
+- [Overview of MOS Devices](./devices.md)
 - MIM capacitor 
    - Between top metal (5) and the metal below (4)
    - MIM capacitor density is 2 fF per $\mu m^2$
 - High sheet-resistivity poly resistor (1K $\Omega$ /square)
+
+### Layout
+- Use a DBU (database unit) of 1nm or 0.001um (default in klayout)
+- Draw everything on a 5nm or 0.005um grid otherwise you might get off-grid errors. See [design rules](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_07_02.html). 
 
 ## Design Examples
 
