@@ -13,14 +13,21 @@ For digital outputs, a common estimate is 10pF of loading (or more).
 
 At higher frequencies, things get much more complicated. But the guidance remains the same. Study what the loading will be on the PCB or test set up, build an equivalent electrical model, and include it in your simulation test bench. 
 
-### Ideal Current and Voltage Sources
+### What on-chip load does my block have to drive and how do I drive my block?
 
-- **Ban** ideal voltage sources and ideal current sources, driving your circuit directly:
-    - put a parallel resistance to current bias sources; think what a required value is, that is very instructive: 10K, or 100K, or more, or less ... There is no single universal answer
-    - put a series resistor for a voltage source
+Always simulate your circuits *in context* with the correct signal source driving it and with the correct loading. 
+- If you do not have the next stage ready to attach as a load, estimate the load and put a resistive // capacitive load. A 'bad' estimate is still better than 'no' estimate!
+- E.g. when applying a clock, do not connect the ideal voltage source to your circuit but put two inverters as a 'clock buffer' to get realistic clock waveforms
+    
+### Avoid Ideal Current and Voltage Sources
+
+**Avoid** ideal voltage sources and ideal current sources, driving your circuit directly:
+   - put a parallel resistance to current bias sources; think what a required value is, that is very instructive: 10K, or 100K, or more, or less ... There is no single universal answer
+   - put a series resistor for a voltage source
         - power supply, say 10 Ohms or less (This will start to model real sources and/or supply wiring resistance leading to IR drops)
         - signal source: 
             - a lot of lab equipment has a 50Ohm output impedance
-            - if it is a another circuit, try to include it or think about what an appropriate model is
+            - if it is a another circuit, try to include it or think about what an appropriate model is for the source impedance
+            - or add e.g. inverters as an on-chip clock buffer or LO buffer
 
 > NOTE: Ideal circuit elements can actually create 'artificial' issues in circuits that can take a lot of time to debug but are not physical. 
