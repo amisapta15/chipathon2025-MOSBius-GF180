@@ -41,6 +41,7 @@ August 7, 2025
 - Again, always simulate your circuits with the correct signal source driving it and with the correct loading. 
     - E.g. when applying a clock, do not connect the ideal voltage source to your circuit but put two inverters as a buffer to get realistic clock waveforms
     - If you do not have the next stage ready to attach as a load, estimate the load and put a resistive // capacitive load. A 'bad' estimate is still better than 'no' estimate!
+    - Take a look at [F.A. Design Q.](../design_FAQ/)
 
 - **Ban** ideal voltage sources and ideal current sources:
     - put a parallel resistance to bias current sources; think what an appropriate value is, that is very instructive: 10K, or 100K, or more, or less ... There is no single universal answer
