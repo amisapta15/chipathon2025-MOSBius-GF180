@@ -4,12 +4,9 @@
 x1 n1 VDD VSS n2 inverter
 x2 n2 VDD VSS n3 inverter
 x3 n3 VDD VSS n1 inverter
-C1 n2 VSS 100f m=1
-C2 n3 VSS 100f m=1
-C3 n1 VSS 100f m=1
 .ends
 
-* expanding   symbol:  inverter/xschem/inverter.sym # of pins=4
+* expanding   symbol:  /foss/designs/Chipathon2025_gf180/gf180_examples/inverter/xschem/inverter.sym # of pins=4
 ** sym_path: /foss/designs/Chipathon2025_gf180/gf180_examples/inverter/xschem/inverter.sym
 ** sch_path: /foss/designs/Chipathon2025_gf180/gf180_examples/inverter/xschem/inverter.sch
 .subckt inverter Vin VDD VSS Vout
