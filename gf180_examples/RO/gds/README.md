@@ -36,6 +36,7 @@ Finally, change the hierarchy visualization with the level option (1 --> 3 for t
    <img src="./img/hierarchy_levels.png" width="600" />
 </p>
 
+## DRC clean
 Below is the layout of the ring oscillator and the window confirming DRC clean.
 <p align="center">
    <img src="./img/RO_layout.png" width="600" />
@@ -43,4 +44,27 @@ Below is the layout of the ring oscillator and the window confirming DRC clean.
 
 <p align="center">
    <img src="./img/DRC_clean.png" width="600" />
+</p>
+
+## LVS clean.
+Remember to prepare the schematic file in Xschem by checking the **LVS netlist + Top level is a .subckt** option.
+
+<p align="center">
+   <img src="./img/xschem_file.png" width="600" />
+</p>
+
+Then, set the following options for **Klayout LVS Options**:
+1) **Substrate name**: VSS
+2) **Variant options**: D
+3) **Top cell name**: 3_stage_RO
+4) **Netlist path**: /foss/designs/Chipathon2025_gf180/gf180_examples/RO/xschem/simulation/3_stage_RO.spice
+
+Finally, eliminate the metal labels from the inverter cells, create new labels for the 3_stage_RO cell, and check the **Top level pins** option as indicated below.
+
+<p align="center">
+   <img src="./img/top_level_pins.png" width="600" />
+</p>
+
+<p align="center">
+   <img src="./img/lvs_clean.png" width="600" />
 </p>
