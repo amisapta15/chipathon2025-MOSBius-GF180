@@ -96,23 +96,3 @@
 | **Resistor (HRES)** | | |
 | Resistor (HRES) | 1K P+ HRS | ppolyf_u_1k, ppolyf_u_1k_6p0 |
 
-## Thin-Oxide 1.8V Devices are not Available in GF180MCU
-
-- From [Definition of the Process Variant](https://github.com/RTimothyEdwards/open_pdks/blob/master/gf180mcu/Makefile.in): 
-> GF180MCU uses the same base process as
-> other GF180 processes.  However, instead of a thin oxide gate, the base
-> oxide is a thick oxide, and the thick oxide mask defines a thicker oxide.
-> The process DRC rules then follow the rule sets for thick oxide devices,
-> so the minimum length transistor is 280nm, making this much more like a
-> 0.28um process than a 0.18um process.
-
-- So, the following devices are **not** available in **gf180mcuD**:
-
-| Schematic Label            | Device Type                     | Voltage Rating | SPICE Model Name      | Notes                                    |
-|---------------------------|----------------------------------|----------------|-----------------------|------------------------------------------|
-| *(not in test schematic)* | Thin-oxide NMOS (core)          | 1.8 V          | `nfet_01v8`           | Standard core NMOS                       |
-| *(not in test schematic)* | Thin-oxide PMOS (core)          | 1.8 V          | `pfet_01v8`           | Standard core PMOS                       |
-| *(not in test schematic)* | Thin-oxide NMOS, LVT            | 1.8 V          | `nfet_01v8_lvt`       | Low-V<sub>TH</sub> core NMOS             |
-| *(not in test schematic)* | Thin-oxide NMOS, HVT            | 1.8 V          | `nfet_01v8_hvt`       | High-V<sub>TH</sub> NMOS (low leakage)   |
-| *(not in test schematic)* | Thin-oxide PMOS, LVT            | 1.8 V          | `pfet_01v8_lvt`       | Low-V<sub>TH</sub> core PMOS             |
-| *(not in test schematic)* | Thin-oxide PMOS, HVT            | 1.8 V          | `pfet_01v8_hvt`       | High-V<sub>TH</sub> PMOS                 |
