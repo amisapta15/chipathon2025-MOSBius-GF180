@@ -41,3 +41,23 @@ Downloading gf180mcu_fd_sc_mcu7t5v0.tar.zst… ━━━━━━━━━━━
 Downloading gf180mcu_fd_sc_mcu9t5v0.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
 Version fe2b40c6d7f43ab31aeb4c50c280b3da925c9462 enabled for the gf180mcu PDK.
 ```
+
+### Aug. 11 PDK Update Seems to have PCell Layout Issues
+- Reverting back
+```
+PDK: gf180mcuD /foss/pdks > ciel ls
+In /foss/pdks/ciel/gf180mcu/versions:
+├── fe2b40c6d7f43ab31aeb4c50c280b3da925c9462 (2025.08.11) (enabled)
+└── f2e289da6753f26157a308c492cf990fdcd4932d (2025.06.12)
+
+PDK: gf180mcuD /foss/pdks > ciel enable --pdk-family gf180mcu f2e289da6753f26157a308c492cf990fdcd4932d
+Version f2e289da6753f26157a308c492cf990fdcd4932d not found locally, attempting to download…
+Downloading common.tar.zst… ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Version f2e289da6753f26157a308c492cf990fdcd4932d enabled for the gf180mcu PDK.
+
+PDK: gf180mcuD /foss/pdks > ciel ls
+In /foss/pdks/ciel/gf180mcu/versions:
+├── fe2b40c6d7f43ab31aeb4c50c280b3da925c9462 (2025.08.11)
+└── f2e289da6753f26157a308c492cf990fdcd4932d (2025.06.12) (enabled)
+
+```
