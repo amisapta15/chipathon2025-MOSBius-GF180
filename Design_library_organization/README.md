@@ -96,4 +96,37 @@ We recommend using klayout with the `klayout_lib_manager.py` utility for library
 
 ![alt text](img/klayout.png)
 
+- When creating a new cell in klayout, make sure to change the default TOP cell name of *TOP* with the actual name of your cell; this will be a time-saver once you start doing LVS. 
+
 - Review additional details in [iic-osic-tools-project-template/docs/layout_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/layout_workflow.md).
+
+# How to Include Other Libraries Outside your GitHub Repository
+
+## Basic: Use `git submodule`
+
+- Add the GitHub repository to your `/foss/design/libs` folder
+
+- Example, lets add the library `switch_matrix_gf180mcu_9t5v0` from *mosbiuschip*; make sure you are in your root folder of your design repo; the `libs` folder should then be at `./designs/libs` from there. 
+
+```
+git submodule add https://github.com/mosbiuschip/switch_matrix_gf180mcu_9t5v0.git ./designs/libs/switch_matrix_gf180mcu_9t5v0
+
+```
+- Now commit your design repo update; you can also `git push` it to your *origin*. 
+
+```
+git commit -am "Add switch_matrix_gf180mcu_9t5v0 as a submodule"
+```
+
+- Make sure to check with your favorite `git` and GitHub instructions (GPTs are pretty well versed in the topic) to verify that everything went OK. E.g., the following commands might be helpful:
+```
+git status
+git submodule status
+cat .gitmodules
+```
+
+- The submodule is now a **separate** repo with its own status, branches, etc. that operates independently from your own main repository. You need to maintain (i.e. *branches*, *commit*, *push*, ... ) each separately. 
+
+## Advanced: Use `ams-compose`
+
+- Take a look at the [`ams-compose`](https://github.com/Jianxun/ams_compose) from Jianxun Zhu for a more refined way of building up a design library -- Note that this is experimental code. 
