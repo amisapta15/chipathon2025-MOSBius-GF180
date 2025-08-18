@@ -74,7 +74,7 @@ Here is a library for a switch matrix design; the top cell is `swmatrix_5_10` wh
 ```
 - this will ensure that the schematics include the library folder as part of the path for the symbols in `xschem`.
 
-Additional details in [iic-osic-tools-project-template/docs/schematic_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/schematic_workflow.md).
+- Review additional details in [iic-osic-tools-project-template/docs/schematic_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/schematic_workflow.md).
 
 # Layout Editing
 
@@ -96,4 +96,4 @@ We recommend using klayout with the `klayout_lib_manager.py` utility for library
 
 ![alt text](img/klayout.png)
 
-Additional details in [iic-osic-tools-project-template/docs/layout_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/layout_workflow.md).
+- Review additional details in [iic-osic-tools-project-template/docs/layout_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/layout_workflow.md).
