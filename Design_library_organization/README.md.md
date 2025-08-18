@@ -94,4 +94,6 @@ We recommend using klayout with the `klayout_lib_manager.py` utility for library
 
 - Once in klayout --> hit `update_libraries` which will scan `/foss/designs/libs` and all its subfolders for `.gds` files and create an alias listed in `/foss/designs/libs/libs.json`. 
 
+![alt text](img/klayout.png)
+
 Additional details in [iic-osic-tools-project-template/docs/layout_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/layout_workflow.md).
