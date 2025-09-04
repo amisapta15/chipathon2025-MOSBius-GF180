@@ -28,6 +28,7 @@ From [Definition of the Process Variant](https://github.com/RTimothyEdwards/open
    - Between top metal (5) and the metal below (4)
    - MIM capacitor density is 2 fF per $\mu m^2$
 - High sheet-resistivity poly resistor (1K $\Omega$ /square)
+- [Detailed list of all devices](all_devices.md)
 
 ### Layout
 - Please review [inverter layout example](../gf180_examples/inverter/gds/README.md) and [the klayout instructions](../klayout_pcells/README.md).

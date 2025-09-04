@@ -31,10 +31,14 @@ In this repository you will find the main documentation associated with the MOSb
 
 ## Creating Your GitHub Repository for Your Design Files
 
-- To create the GitHub repository for your design files so you can collaborate among your team, use [GF180 Analog Design Project Template Repo](https://github.com/Jianxun/iic-osic-tools-project-template) as a template for creating your project file repository on GitHub (see also in [CAD_tool_installation](./CAD_tool_installation/install_using_repo.md))
+- To create the GitHub repository for your design files so you can collaborate among your team, use [GF180 iic-osic-tools-project-template](https://github.com/Jianxun/iic-osic-tools-project-template) as a template for creating your project file repository on GitHub
+- Review [using_github_template](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/using_github_template.md) on *iic-osic-tools-project-template --> docs*
+- Review [team_workflow](https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/docs/team_workflow.md) on *iic-osic-tools-project-template --> docs*
 
+## Organizing Your Design Libraries
+
+- Review [Design Library Organization](./Design_library_organization/README.md) for how to organize your design library. 
 - The template has a suggested folder structure, as well as an example of a small design of a five-transistor operational transconductance amplifier (5T-OTA) including schematics and layout. 
-- This template is part of the [installation instructions (simplest version)](./CAD_tool_installation/install_using_repo.md).
 
 ## Any Questions, Corrections, ... 
 

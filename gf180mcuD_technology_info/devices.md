@@ -1,4 +1,4 @@
-# Devices in gf180mcuD
+# MOS Devices in gf180mcuD
 
 
 
@@ -28,6 +28,7 @@
 | `test_nfet_10v0_asym`     | Asymmetric HV NMOS              | 10.0 V         | `nfet_10v0_asym`      | High-voltage output or IO path           |
 | `test_pfet_10v0_asym`     | Asymmetric HV PMOS              | 10.0 V         | `pfet_10v0_asym`      | High-voltage output or IO path           |
 
+- [Full List of All Devices](all_devices.md)
 
 
 ## Gm-over-ID Characterization
@@ -46,8 +47,6 @@
 - [Chapter 3 in H. Pretl et al., 'Analog Circuit Design' ](https://iic-jku.github.io/analog-circuit-design/analog_circuit_design.html#sec-gmid-method) discusses gm/ID characterization using the open-source tools. 
 
 
-----
-----
 ## Thin-Oxide 1.8V Devices are not Available in GF180MCU
 
 - From [Definition of the Process Variant](https://github.com/RTimothyEdwards/open_pdks/blob/master/gf180mcu/Makefile.in): 
