@@ -11,7 +11,7 @@ N -240 -310 -240 -260 {lab=VDD}
 N 190 -360 190 -310 {lab=VDD}
 N 190 -180 190 -140 {lab=VSS}
 N 340 -260 380 -260 {lab=n1}
-C {xschem/3_stage_RO.sym} 150 -180 0 0 {name=x1}
+C {/foss/designs/Chipathon2025_gf180/gf180_examples/RO/xschem/3_stage_RO.sym} 150 -180 0 0 {name=x1}
 C {devices/code_shown.sym} -370 -90 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
