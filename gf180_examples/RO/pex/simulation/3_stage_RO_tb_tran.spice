@@ -1,0 +1,27 @@
+** sch_path: /foss/designs/Chipathon2025_gf180/gf180_examples/RO/pex/3_stage_RO_tb_tran.sch
+**.subckt 3_stage_RO_tb_tran
+V1 VSS GND 0
+V2 VDD VSS 3.3
+* noconn n1
+X1 VDD VSS n1 3_stage_RO
+C1 n1 VSS 10f m=1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/smbb000149.ngspice typical
+
+
+
+.include /foss/designs/Workshop_CASS/Modulo_Analogico/Laboratorios/Lab5/RO/pex/3_stage_RO.spice
+.control
+ic v(n1)=0
+tran 1n 10u
+plot v(n1)
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
